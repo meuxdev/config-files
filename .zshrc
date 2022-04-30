@@ -1,9 +1,17 @@
-#ALIAS
+# Moving Alias
 alias projects="cd ~/documents/projects"
 alias courses="cd ~/documents/courses"
+
+# Filter Alias
 alias ls-js="ls *.js" # shows and filters with wild cards all the .js files
+
+# Python alias 
 alias py="python3"
+
+# Git alias
 alias git-log-graph="git log --all --graph --decorate --oneline"
+alias gp="git push"
+alias gc="git commit"
 
 # ALIAS CONFIG
 alias vim-config="vim ~/.config-files/.vimrc"
