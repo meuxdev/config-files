@@ -89,6 +89,10 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 " <spacebar> + q
 
+" Save and quit a file
+nnoremap <Leader>x :x<CR>
+" <spacebar> + x
+
 " Neerd Tree
 map <Leader>nt :NERDTreeFind<CR>
 " <spacebar> + nt
