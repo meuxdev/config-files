@@ -1,0 +1,4 @@
+[include]
+	path = ~/.gitconfig.user
+[gpg]
+	program = gpg
