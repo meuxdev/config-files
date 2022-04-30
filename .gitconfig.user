@@ -1,0 +1,10 @@
+[user]
+  name = Alejandro Andrade
+  email = meuxdev@gmail.com 
+  signingkey = meuxdev@gmail.com
+
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgSign = true

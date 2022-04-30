@@ -11,11 +11,13 @@ alias py="python3"
 # Git alias
 alias glg="git log --all --graph --decorate --oneline" # git log graph
 alias gp="git push"
+alias gpl="git pull"
 alias gc="git commit"
 alias ga="git add"
 alias gs="git status"
 alias gl="git log" 
 alias gm="git branch -m master main" # refactors main branch
+alias gi="git init"
 
 # ALIAS CONFIG
 alias vim-config="vim ~/.config-files/.vimrc"

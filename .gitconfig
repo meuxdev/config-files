@@ -2,3 +2,5 @@
 	path = ~/.gitconfig.user
 [gpg]
 	program = gpg
+[core]
+	editor = vim

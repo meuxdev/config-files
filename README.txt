@@ -32,3 +32,4 @@ Including:
 - vim config -> .vimrc
 - zsh config -> .zshrc
 - Git config -> .gitconfig
+- Git config User -> .gitcongfig.user
