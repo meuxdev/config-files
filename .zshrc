@@ -4,7 +4,10 @@ alias courses="cd ~/documents/courses"
 alias ls-js="ls *.js" # shows and filters with wild cards all the .js files
 alias py="python3"
 alias git-log-graph="git log --all --graph --decorate --oneline"
+
+# ALIAS CONFIG
 alias vim-config="vim ~/.config-files/.vimrc"
+alias zsh-config="vim ~/.config-files/.vimrc"
 
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
