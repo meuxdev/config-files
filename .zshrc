@@ -9,7 +9,7 @@ alias ls-js="ls *.js" # shows and filters with wild cards all the .js files
 alias py="python3"
 
 # Git alias
-alias glg="git log --all --graph --decorate --oneline" # git log graph
+alias git-graph="git log --all --graph --decorate --oneline" # git log graph
 alias gp="git push"
 alias gpl="git pull"
 alias gc="git commit"
@@ -21,7 +21,7 @@ alias gi="git init"
 
 # ALIAS CONFIG
 alias vim-config="vim ~/.config-files/.vimrc"
-alias zsh-config="vim ~/.config-files/.vimrc"
+alias zsh-config="vim ~/.config-files/.zshrc"
 
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -82,3 +82,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source ~/.rvm/scripts/rvm

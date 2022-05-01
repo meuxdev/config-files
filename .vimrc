@@ -35,6 +35,10 @@ Plug 'tpope/vim-surround'
 Plug 'benmills/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 
+" Live server for web dev
+Plug 'turbio/bracey.vim'
+
+
 " autocomplete
 Plug 'sirver/ultisnips'
 
