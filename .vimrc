@@ -3,6 +3,9 @@ set mouse=a
 set numberwidth=1
 set clipboard=unamed
 syntax on
+filetype on
+filetype indent on
+filetype plugin on
 set showcmd
 set ruler
 set cursorline
@@ -12,6 +15,7 @@ set sw=2
 set relativenumber
 set laststatus=2
 set nocompatible
+
 
 "
 " PLUGINS VIM
@@ -52,6 +56,9 @@ Plug 'scrooloose/nerdcommenter'
 
 " git 
 Plug 'tpope/vim-fugitive'
+
+" Ruby
+Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -111,4 +118,5 @@ nnoremap <Leader>py :!python3 %<cr>
 " Run JS file
 nnoremap <Leader>js :!node %<cr>
 
-
+" Run Ruby file
+nnoremap <Leader>r :!ruby %<cr>

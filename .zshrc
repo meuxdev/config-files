@@ -10,14 +10,11 @@ alias py="python3"
 
 # Git alias
 alias git-graph="git log --all --graph --decorate --oneline" # git log graph
-alias gp="git push"
-alias gpl="git pull"
-alias gc="git commit"
-alias ga="git add"
-alias gs="git status"
-alias gl="git log" 
-alias gm="git branch -m master main" # refactors main branch
-alias gi="git init"
+alias gc="git commit" # Git commit
+alias gaa="git add -A" # Git add all
+alias gmu="git branch -m master main" # refactors main branch
+alias gin="git init" # git init
+alias gcam="git commit -am" # git add and commit
 
 # ALIAS CONFIG
 alias vim-config="vim ~/.config-files/.vimrc"
@@ -31,6 +28,8 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # GPG PATCH
 export GPG_TTY="${tty}"
+GPG_TTY="${tty}"
+
 
 # THEME
 ZSH_THEME="spaceship"

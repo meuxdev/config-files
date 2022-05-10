@@ -4,3 +4,6 @@
 	program = gpg
 [core]
 	editor = vim
+[alias]
+	stats-short = shortlog -sn --all --no-merges # shows the stats of amount of commits
+	stats-long = shortlog --all --no-merges # same as before but with the commit text
