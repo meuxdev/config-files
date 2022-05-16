@@ -1,4 +1,5 @@
 alias work-go="cd ~/.config-files && git checkout golang-config && cd ~ && clear &&echo 'Ready to work on golang!!'"
+alias work-py="cd ~/.config-files && git checkout python-config && cd ~ && clear &&echo 'Ready to work on python!!'"
 
 
 # Moving Alias
