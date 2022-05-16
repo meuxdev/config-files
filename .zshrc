@@ -1,4 +1,4 @@
-alias work-go="cd ~/.config-files && git checkout golang-config && cd ~ && echo 'Ready to work on golang'"
+alias work-go="cd ~/.config-files && git checkout golang-config && cd ~ && clear &&echo 'Ready to work on golang'"
 
 
 # Moving Alias
