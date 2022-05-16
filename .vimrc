@@ -16,15 +16,22 @@ set relativenumber
 set laststatus=2
 set nocompatible
 
+" gopls support
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
-"
+" GO PLUGS
+let g:go_def_mapping_enable = 0
+
 " PLUGINS VIM
-"
-
 call plug#begin()
 
 " Syntax Highlight
 Plug 'sheerun/vim-polyglot'
+
+" Vim GO
+Plug 'fatih/vim-go'
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 "Navegation
 Plug 'preservim/NERDTree'
@@ -120,3 +127,6 @@ nnoremap <Leader>js :!node %<cr>
 
 " Run Ruby file
 nnoremap <Leader>r :!ruby %<cr>
+
+" Run GO
+nnoremap <Leader>go :!clear && go run %<cr>

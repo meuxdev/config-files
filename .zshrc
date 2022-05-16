@@ -2,6 +2,8 @@
 alias projects="cd ~/documents/projects"
 alias courses="cd ~/documents/courses"
 
+# GO workspace
+
 # Filter Alias
 alias ls-js="ls *.js" # shows and filters with wild cards all the .js files
 
@@ -25,6 +27,16 @@ alias zsh-config="vim ~/.config-files/.zshrc"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+
+# GOLANG env vars w
+export GOPATH=/home/soyalextreme/go
+export GOBIN=$GOPATH/bin
+export GOROOT=/usr/local/go/
+export GOWORKSPACE=$GOPATH/src/
+
+alias gowork="cd $GOWORKSPACE"
+export PATH=$PATH:$GOBIN:$GOROOT/bin
 
 # GPG PATCH
 export GPG_TTY="${tty}"
@@ -85,3 +97,5 @@ export NVM_DIR="$HOME/.nvm"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 source ~/.rvm/scripts/rvm
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
