@@ -1,3 +1,6 @@
+alias work-go="cd ~/.config-files && git checkout golang-config"
+
+
 # Moving Alias
 alias projects="cd ~/documents/projects"
 alias courses="cd ~/documents/courses"
