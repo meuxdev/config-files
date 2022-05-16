@@ -33,3 +33,9 @@ Including:
 - zsh config -> .zshrc
 - Git config -> .gitconfig
 - Git config User -> .gitcongfig.user
+
+=================================================================
+
+COMMANDS:
+
+work-go -> changes the env for working with golang.
