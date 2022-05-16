@@ -80,14 +80,17 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'indentLine.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-
+Plugin 'frazrepo/vim-rainbow' 
 
 call vundle#end()
 
+" Colorize brackets config
+let g:rainbow_active = 1
 
 
 " THEME 
-colorscheme dracula
+" colorscheme dracula
+" colorscheme monokai
 
 
 " MAPS
