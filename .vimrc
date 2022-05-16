@@ -73,14 +73,45 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'indentLine.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'vim-scripts/indentpython.vim'
+" Syntax checking highlighting
+Plugin 'vim-syntastic/syntastic'
+" PEP 8 Checking
+Plugin 'nvie/vim-flake8'
+Plugin 'andviro/flake8-vim'
 
+" Color schemes
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+
+"Autocomplete
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()
 
+" Enable highlight python
+let python_highlight_all=1
 
+
+
+
+" JS | HTML | CSS indentation 
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
 
 " THEME 
-colorscheme dracula
+" colorscheme dracula
+if has('gui_running')
+    set background=dark
+    colorscheme solarized
+else
+    colorscheme zenburn
+endif
+
+" F5 for switching theme
+call togglebg#map("<F5>")
 
 
 " MAPS
