@@ -1,4 +1,4 @@
-alias work-py="cd ~/.config-files && git checkout python-config && cd ~ && source ~/.zshr && clear &&echo 'Ready to work on python!!'"
+alias work-py="cd ~/.config-files && git checkout python-config && cd ~ && source ~/.zshrc && clear && echo 'Ready to work on python!!'"
 
 
 # Moving Alias
