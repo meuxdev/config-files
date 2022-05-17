@@ -1,6 +1,11 @@
 alias work-go="cd ~/.config-files && git checkout golang-config && cd ~ && source ~/.zshrc && clear &&echo 'Ready to work on python!!'"
 
 
+# todo alias
+alias todo="vim ~/todo.txt"
+alias todo-l="cat ~/todo.txt"
+
+
 # Moving Alias
 alias projects="cd ~/documents/projects"
 alias courses="cd ~/documents/courses"
