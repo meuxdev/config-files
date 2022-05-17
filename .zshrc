@@ -2,8 +2,8 @@ alias work-go="cd ~/.config-files && git checkout golang-config && cd ~ && clear
 
 
 # todo alias
-alias todo="vim todo.txt"
-alias todo-l="cat todo.txt"
+alias todo="vim ~/todo.txt"
+alias todo-l="cat ~/todo.txt"
 
 
 # Moving Alias
