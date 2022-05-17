@@ -16,6 +16,8 @@ set relativenumber
 set laststatus=2
 set nocompatible
 
+
+
 " gopls support
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
@@ -33,7 +35,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'fatih/vim-go'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
-"Navegation
+" Nav
 Plug 'preservim/NERDTree'
 
 " Typing
@@ -89,8 +91,8 @@ let g:rainbow_active = 1
 
 
 " THEME 
-" colorscheme dracula
-colorscheme monokai
+colorscheme dracula
+" colorscheme monokai
 
 
 " MAPS

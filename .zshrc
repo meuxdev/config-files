@@ -38,7 +38,7 @@ export GOBIN=$GOPATH/bin
 export GOROOT=/usr/local/go/
 export GOWORKSPACE=$GOPATH/src/
 
-alias gowork="cd $GOWORKSPACE"
+alias goworks="cd $GOWORKSPACE"
 export PATH=$PATH:$GOBIN:$GOROOT/bin
 
 # GPG PATCH
