@@ -90,7 +90,7 @@ let g:rainbow_active = 1
 
 " THEME 
 " colorscheme dracula
-" colorscheme monokai
+colorscheme monokai
 
 
 " MAPS
