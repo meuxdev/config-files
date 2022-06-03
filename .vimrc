@@ -69,6 +69,10 @@ Plug 'tpope/vim-fugitive'
 " Ruby
 Plug 'w0rp/ale'
 
+" Purify theme
+Plug 'kyoz/purify', { 'rtp': 'vim' }
+
+
 call plug#end()
 
 
@@ -93,6 +97,7 @@ let g:rainbow_active = 1
 " THEME 
 colorscheme dracula
 " colorscheme monokai
+" colorscheme purify
 
 
 " MAPS
