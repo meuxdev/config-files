@@ -42,6 +42,19 @@ export GOBIN=$GOPATH/bin
 export GOROOT=/usr/local/go/
 export GOWORKSPACE=$GOPATH/src/
 
+# Profile go .out
+# creates and opens the profile util
+alias goprofile="go test -cpuprofile=cpu.out && go tool pprof cpu.out"
+# creates the profile report
+alias goprofile-create="go test -cpuprofile=cpu.out"
+# opens the profile report with the util of pprof
+alias goprofile-read="go tool pprof cpu.out"
+
+
+# Coverage Go
+alias gocoverage="go test -coverprofile=coverage.out && go tool cover -func=coverage.out > _coverageTesting.txt && more _coverageTesting.txt"
+
+
 alias goworks="cd $GOWORKSPACE"
 export PATH=$PATH:$GOBIN:$GOROOT/bin
 
