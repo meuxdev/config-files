@@ -49,6 +49,10 @@ Plug 'sirver/ultisnips'
 " Searching FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 
 " Add Comments
@@ -59,6 +63,7 @@ Plug 'tpope/vim-fugitive'
 
 " Ruby
 Plug 'w0rp/ale'
+
 
 call plug#end()
 
@@ -120,3 +125,7 @@ nnoremap <Leader>js :!node %<cr>
 
 " Run Ruby file
 nnoremap <Leader>r :!ruby %<cr>
+
+
+" Prettier Confg
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
