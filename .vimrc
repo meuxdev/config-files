@@ -65,13 +65,17 @@ Plug 'scrooloose/nerdcommenter'
 
 " git 
 Plug 'tpope/vim-fugitive'
+" neerdtree git
+Plug 'Xuyuanp/nerdtree-git-plugin'
+" Nerd Tree Icons
+Plug 'ryanoasis/vim-devicons'
 
-" Ruby
-Plug 'w0rp/ale'
 
 " Purify theme
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 
+" Ocianic Next theme
+Plug 'mhartington/oceanic-next'
 
 call plug#end()
 
@@ -93,17 +97,35 @@ call vundle#end()
 " Colorize brackets config
 let g:rainbow_active = 1
 
+" Vim Termguicolors
+ if (has("termguicolors"))
+  set termguicolors
+ endif
 
 " THEME 
-colorscheme dracula
+" colorscheme dracula
 " colorscheme monokai
 " colorscheme purify
-
+colorscheme OceanicNext
 
 " MAPS
 " -----------------------------
 
 let mapleader=" "
+
+" Neerd tree git close
+let g:NERDTreeGitStatusIndicatorMapCustom= {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
 
 " Quick ;
 nnoremap <Leader>; $a;<Esc> 
