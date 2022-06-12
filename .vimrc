@@ -2,8 +2,8 @@ set number
 set mouse=a
 set numberwidth=1
 set clipboard=unamed
-syntax on
 filetype on
+syntax on
 filetype indent on
 filetype plugin on
 set showcmd
@@ -15,7 +15,6 @@ set sw=2
 set relativenumber
 set laststatus=2
 set nocompatible
-
 
 
 " gopls support
@@ -104,9 +103,14 @@ let g:rainbow_active = 1
 
 " THEME 
 " colorscheme dracula
-" colorscheme monokai
+colorscheme monokai
 " colorscheme purify
-colorscheme OceanicNext
+" colorscheme OceanicNext
+" let g:oceanic_next_terminal_bold = 1
+" let g:oceanic_next_terminal_italic = 1
+
+
+
 
 " MAPS
 " -----------------------------
