@@ -86,6 +86,9 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
 
+" Embark Theme
+Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+
 
 
 
@@ -109,7 +112,8 @@ call vundle#end()
 
 
 " THEME 
-colorscheme dracula
+"colorscheme dracula
+colorscheme embark
 
 
 " MAPS
