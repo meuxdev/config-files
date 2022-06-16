@@ -1,4 +1,5 @@
 alias work-go="cd ~/.config-files && git checkout golang-config && cd ~ && source ~/.zshrc && clear &&echo 'Ready to work on golang!!'"
+alias work-js="cd ~/.config-files && git checkout js-config && cd ~ && source ~/.zshrc && clear &&echo 'Ready to work on JavaScript!!'"
 
 
 # todo alias
