@@ -119,3 +119,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 source ~/.rvm/scripts/rvm
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+
