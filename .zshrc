@@ -1,4 +1,5 @@
 alias work-py="cd ~/.config-files && git checkout python-config && cd ~ && source ~/.zshrc && clear && echo 'Ready to work on python!!'"
+alias work-js="cd ~/.config-files && git checkout js-config && cd ~ && source ~/.zshrc && clear && echo 'Ready to work on JavaScript!!'"
 
 # todo alias
 alias todo="vim ~/todo.txt"
