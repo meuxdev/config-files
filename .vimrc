@@ -105,6 +105,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'indentLine.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'iamcco/coc-angular'
+Plugin 'editorconfig/editorconfig-vim'
 
 
 call vundle#end()
