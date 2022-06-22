@@ -1,7 +1,6 @@
 set number
 set mouse=a
 set numberwidth=1
-set clipboard=unamed
 syntax on
 filetype on
 filetype indent on
@@ -73,6 +72,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'indentLine.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'OmniSharp/omnisharp-vim'
 
 
 call vundle#end()
@@ -120,3 +120,7 @@ nnoremap <Leader>js :!node %<cr>
 
 " Run Ruby file
 nnoremap <Leader>r :!ruby %<cr>
+
+" Map autocompletion omnisharp
+inoremap <expr> <Tab> pumvisible() ? '<C-n>' :                                                                                                                    
+\ getline('.')[col('.')-2] =~# '[[:alnum:].-_#$]' ? '<C-x><C-o>' : '<Tab>
