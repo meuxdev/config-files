@@ -1,5 +1,7 @@
-alias work-go="cd ~/.config-files && git checkout golang-config && cd ~ && clear &&echo 'Ready to work on golang!!'"
-
+alias work-py="cd ~/.config-files && git checkout python-config && cd ~ && source ~/.zshrc && clear && echo 'Ready to work with python!!💚'"
+alias work-js="cd ~/.config-files && git checkout js-config && cd ~ && source ~/.zshrc && clear && echo 'Ready to work with JavaScript!!💛'"
+alias work-dotnet="cd ~/.config-files && git checkout dotnet-config && cd ~ && source ~/.zshrc && clear && echo 'Ready to work with .NET💜!!'"
+alias work-dotnet="cd ~/.config-files && git checkout golang-config && cd ~ && source ~/.zshrc && clear && echo 'Ready to work with Golang💙!!'"
 
 # todo alias
 alias todo="vim ~/todo.txt"
