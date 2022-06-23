@@ -59,6 +59,13 @@ Plug 'tpope/vim-fugitive'
 " Ruby
 Plug 'w0rp/ale'
 
+" COC vim OmniSharp
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'OmniSharp/omnisharp-vim'
+
+" LSP Lenguage Server Protocol
+Plug 'prabirshrestha/vim-lsp'
+
 call plug#end()
 
 
@@ -72,7 +79,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'indentLine.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-Plugin 'OmniSharp/omnisharp-vim'
 
 
 call vundle#end()
@@ -118,9 +124,15 @@ nnoremap <Leader>py :!python3 %<cr>
 " Run JS file
 nnoremap <Leader>js :!node %<cr>
 
-" Run Ruby file
-nnoremap <Leader>r :!ruby %<cr>
+" DotNet Run
+nnoremap <Leader>r :!clear && dotnet run %<cr>
 
-" Map autocompletion omnisharp
-inoremap <expr> <Tab> pumvisible() ? '<C-n>' :                                                                                                                    
-\ getline('.')[col('.')-2] =~# '[[:alnum:].-_#$]' ? '<C-x><C-o>' : '<Tab>
+autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
+" Supprot for different goto definitions for different file types.
+autocmd FileType cs nmap <silent> gd :OmniSharpGotoDefinition<CR>
+autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
+autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
+autocmd FileType cs nnoremap <Leader><Space> :OmniSharpGetCodeActions<CR>
+
+
+
