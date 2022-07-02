@@ -79,6 +79,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'indentLine.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
+Plugin 'NLKNguyen/papercolor-theme'
 
 
 call vundle#end()
@@ -86,8 +87,9 @@ call vundle#end()
 
 
 " THEME 
-colorscheme dracula
-
+set t_Co=256   " This is may or may not needed.
+set background=dark
+colorscheme PaperColor
 
 " MAPS
 " -----------------------------
