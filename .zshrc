@@ -10,8 +10,8 @@ alias todo-l="cat ~/todo.txt"
 
 # Moving Alias
 alias projects="cd ~/documents/projects"
-alias courses="cd ~/documents/courses"
 alias dotnetws="/mnt/c/Users/andra/Desktop/dotnet-dev"
+alias courses="/mnt/c/Users/andra/Desktop/Cursos"
 
 # Filter Alias
 alias ls-js="ls *.js" # shows and filters with wild cards all the .js files
